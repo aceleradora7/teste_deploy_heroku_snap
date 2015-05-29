@@ -1,4 +1,7 @@
-build.gradle
-settings.gradle
-src/
 
+.gradle/
+.idea/
+gradle/
+gradlew
+gradlew.bat
+testeGradleHerokuSnapSpring.iml
