@@ -43,3 +43,17 @@ dependencies{
 task wrapper(type:Wrapper ){
     gradleVersion="2.3"
 }
+
+task stage(type: Copy, dependsOn: [clean, build]){
+    from jar.archivePath
+    into project.rootDir
+    rename{
+        teste-stage.jar
+    }
+}
+
+stage.mustRunAfter(clean)
+
+clean << {
+    project.file('teste-stage.jar').delete()
+}
