@@ -3,6 +3,4 @@
 .idea/
 gradle/
 build/
-gradlew
-gradlew.bat
 testeGradleHerokuSnapSpring.iml
