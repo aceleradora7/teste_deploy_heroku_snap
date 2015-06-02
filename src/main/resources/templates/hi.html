@@ -3,11 +3,22 @@
 <head lang="en">
     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" />
     <title>Servindo conteúdo Web com Spring MVC</title>
+
+    <script src="webjars/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('p').animate({
+                fontSize: '48px'
+            }, "slow");
+        });
+    </script>
+
 </head>
 
 <body>
 
-    <p th:text=" 'Oi, ' + ${name} + '!' " />
+    <p th:text=" 'Hi, ' + ${name} + '!' " />
 
 </body>
 </html>
