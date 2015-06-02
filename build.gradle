@@ -45,7 +45,7 @@ dependencies{
 }
 
 task wrapper(type:Wrapper ){
-    gradleVersion="2.4"
+    gradleVersion="2.3"
 }
 
 /* Stage e Clean sao tasks necessarias para o funcionamento do Snap-CI e do Heroku*/
