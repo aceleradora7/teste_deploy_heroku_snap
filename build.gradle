@@ -1,6 +1,9 @@
 group 'testeGradleHerokuSnapSpring'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility=1.7
+targetCompatibility=1.7
+
 /* buildScript e uma task necessaria para o funcionamento do spring */
 buildscript {
 
@@ -27,9 +30,6 @@ repositories{
     mavenCentral()
 }
 
-sourceCompatibility=1.7
-targetCompatibility=1.7
-
 dependencies{
     compile("org.springframework.boot:spring-boot-starter-web"){
         exclude module: "spring-boot-starter-tomcat"
@@ -45,7 +45,7 @@ dependencies{
 }
 
 task wrapper(type:Wrapper ){
-    gradleVersion="2.3"
+    gradleVersion="2.4"
 }
 
 /* Stage e Clean sao tasks necessarias para o funcionamento do Snap-CI e do Heroku*/
